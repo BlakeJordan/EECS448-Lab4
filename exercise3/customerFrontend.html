@@ -1,0 +1,28 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="style.css">
+      <script type="text/javascript"
+                 src="formChecker.js">
+         </script>
+  </head>
+  <h1>WELCOME TO THE BUTTON STORE</h1>
+  <h2>WE SELL BUTTONS I GUESS</h2>
+  <br>==========================================================<br>
+  <h3>ENTER YOUR USERNAME AND PASSWORD PLEASE THANKS</h3>
+  <form action="customerBackend.php" method="post" id="inputForm" onsubmit="return formCheck()">
+      Username: <input type="text" id="username"> <br>
+      Password: <input type="text" id="password" name="password"><br>
+    <br>==========================================================<br>
+    <h3>CHOOSE A FREAKING BUTTON TO PURCHASE</h3>
+      <input type="radio" id="button1" name="button" value="normal">NORMAL BUTTON: $1,000 <br>
+      <input type="radio" id="button2" name="button" value="deluxe">DELUXE BUTTON: $5,000 <br>
+      <input type="radio" id="button3" name="button" value="specialty">SPECIALTY BUTTON: $10,000<br>
+    <br>==========================================================<br>
+    <h3>CHOOSE A SHIPPING OPTION</h3>
+      <input type="radio" id="shipping1" name="shipping" value="7day">7 DAY: FREE <br>
+      <input type="radio" id="shipping2" name="shipping" value="overnight">OVERNIGHT: $50 <br>
+      <input type="radio" id="shipping3" name="shipping" value="3day">3 DAY: $5<br>
+      <input type="submit" value="BUY SOME BUTTONS OR WHATEVER">
+  </form>
+  <button onclick="reset()">RESET THE FREAKING PAGE</button>
+</html>
